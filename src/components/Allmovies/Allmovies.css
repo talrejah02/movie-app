@@ -1,0 +1,46 @@
+.allmovie-container{
+    width:100%;
+    height:100%;
+    background-color: #1A191F;
+    display: flex;
+    flex-direction: column;
+    
+}
+.allmovie-container h2{
+    margin: 0;
+   color: #fff;
+   margin-left: 0.5rem;
+   padding: 0.5rem;
+
+}
+.container-nav{
+  background-color: transparent;
+  display: flex;
+  justify-content:flex-start;
+  padding:0.4rem;
+}
+.container-nav-btn{
+  background-color:transparent;
+  color:#F9AB00;
+  border:none;
+  font-size:0.75rem;
+  width:7rem;
+  margin-top: 1rem;
+  font-weight:600;
+  
+}
+.line{
+   
+        border-bottom: 1px solid #222028;
+        width: 100%;
+        height: 12px;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+

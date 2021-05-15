@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Nav from './components/Navbar/Nav';
+import Container from './components/Container_new/Container'
+import Allcontainer from './components/Allmovies/Allmovies'
+import Modal from './components/Modal/Modal'
+import React,{useState} from 'react'
+import {useModal} from './context/Modals'
 
 function App() {
+  console.log(useModal())
+  const {openmodal,setopenmodal}=useModal()
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Nav/>
+       <Container/>
+       { openmodal && <Modal/> }
+       <Allcontainer/>
+       </div>
   );
 }
 
